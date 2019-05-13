@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    .layout.flex {
+        display: flex;
+        width: 100%;
+    }
+
+    .left {
+    	background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .center {
+    	background-color: yellow;
+        flex-grow: 1;
+        height: 100px;
+    }
+
+    .right {
+        background-color: blue;
+        width: 100px; 
+        height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="layout flex">
+        <div class="left"></div>
+        <div class="center">三栏布局，中间响应式</div>
+        <div class="right"></div>
+    </div>
+</a>
+</body>
+
+</html>
