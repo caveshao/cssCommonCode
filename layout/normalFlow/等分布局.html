@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equal Layout</title>
+	<style type="text/css">
+		.in {
+			display: inline-block;
+			width: 33.3%;  
+			height: 20px;
+			outline: solid 1px red;
+		}
+ 
+		.main {
+			font-size: 0;  去掉 HTML 的换行与空格对排版的影响 
+
+		}
+ 
+		.main {
+			width: 101px; /* 解决某些浏览器像素精度的问题 */
+		}
+
+		.main:last-child {
+			margin-right: -5px; 
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="in"></div>
+		<div class="in"></div>
+		<div class="in"></div>
+	</div>
+</body>
+</html>
