@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+/*两列等高*/
+    .parent {
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        align-content: center;
+        align-items: stretch;
+    }
+
+    .child {
+        width: 100px;
+        outline: solid 1px;
+    }
+
+/*垂直水平居中*/
+    #parent1 {
+    	display: flex;
+    	width: 600px;
+    	height: 600px;
+    	outline: 3px solid orange;  
+    	align-content: center;
+    	align-items: center;
+    	justify-content: center;
+    }
+
+    #child1 {
+    	width: 100px;
+    	height: 100px;
+        background-color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child" style="height:300px;">
+        </div>
+        <div class="child">
+        </div>
+    </div>    
+    <div id="parent1">
+        <div id="child1">
+        </div>
+    </div>
+</body>
+
+</html>
